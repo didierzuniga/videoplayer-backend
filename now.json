@@ -1,0 +1,12 @@
+{
+  "name": "videoplayer",
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
+  "env": {
+    "DB_USER": "@videoplayer-db-user",
+    "DB_PASSWORD": "@videoplayer-db-password",
+    "DB_HOST": "@videoplayer-db-host",
+    "DB_NAME": "@videoplayer-db-name"
+  }
+}
