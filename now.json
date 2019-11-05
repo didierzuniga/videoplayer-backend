@@ -7,6 +7,7 @@
     "DB_USER": "@videoplayer-db-user",
     "DB_PASSWORD": "@videoplayer-db-password",
     "DB_HOST": "@videoplayer-db-host",
-    "DB_NAME": "@videoplayer-db-name"
+    "DB_NAME": "@videoplayer-db-name",
+    "AUTH_JWT_SECRET": "@auth_jwt_secret"
   }
 }

@@ -68,7 +68,10 @@ function authApi(app) {
               maxAge: apiKeyToken ? THIRTY_DAYS_IN_SEC : TWO_HOURS_IN_SEC
             })
 
-            return res.status(200).json({ token, user: { id, name, email } })
+            return res.status(200).json({
+              token,
+              user: { id, name, email }
+            })
           })
         } catch (error) {
           next(error)
